@@ -2,6 +2,18 @@ body {
   width: 170px;
 }
 
+.wrapper {
+  padding: 5px;
+  border: 1px solid #27ae60;
+  border-radius: 4px;
+}
+
+.time {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
 .timer {
   padding: 10px;
 }
@@ -36,7 +48,6 @@ select {
   background: transparent;
   width: 150px;
   padding: 5px;
-  font-size: 16px;
   border: 1px solid #ccc;
   height: 34px;
 }

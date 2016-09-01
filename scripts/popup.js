@@ -1,12 +1,22 @@
-function setup() {
-  var setBtn = document.querySelector('.btn-set');
-  setBtn.addEventListener('click', set);
-}
+var bgpage = chrome.extension.getBackgroundPage();
 
 function set() {
-  window.close();
+  bgpage.setTimer();
+  refreshDisplay();
+}
+
+function refreshDisplay()
+{
+  var time = bgpage.getTime();
+  document.querySelector('.time').innerHTML = time;
+  refreshDisplayTimeout = setTimeout(refreshDisplay, 100);
+}
+
+function load() {
+  refreshDisplay();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  setup();
+  load();
+  document.querySelector('.btn-set').addEventListener('click', set);
 });

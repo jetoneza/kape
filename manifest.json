@@ -7,5 +7,9 @@
     "default_icon": "images/icon.png",
     "default_popup": "popup.html",
     "default_title": "Set timer"
-  }
+  },
+  "background": {
+    "scripts": ["scripts/timer.js"]
+  },
+  "offline_enabled": true
 }
