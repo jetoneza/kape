@@ -30,8 +30,10 @@ body {
 .actions {
   margin-left: 5px;
   width: 20%;
+  text-align: center;
 }
 
+.btn-stop,
 .btn-set {
   padding: 10px;
   text-transform: uppercase;
@@ -41,6 +43,15 @@ body {
   box-shadow: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn-stop {
+  display: none;
+  position: absolute;
+  background: rgba(255, 69, 76, 0.8);
+  bottom: 15%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 select {
